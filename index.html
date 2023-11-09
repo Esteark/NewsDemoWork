@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Nav  -->
-    <nav>
+    <nav class="px-6 d:px-none">
       <section
         class="container:lg mx-auto bg-white border-gray-200 dark:bg-gray-900"
       >
@@ -171,36 +171,421 @@
     </nav>
     <!-- Nav  -->
     <!-- trending  -->
-    <section class="px-6 lg:px-none mt-5">
-      <article
-        class="container:lg mx-auto bg-[#e8effd] max-w-screen-xl flex items-center gap-3 p-2 rounded-md"
+    <section class="mt-6 max-w-screen-lg lg:container mx-auto px-6 md:px-none">
+      <div
+        id="controls-carousel"
+        class="relative w-full"
+        data-carousel="static"
       >
-        <h3
-          class="text-[12px] font-bold text-white bg-[#2163E8] rounded-md py-2 px-3"
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-[600px]">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out bg-cover flex flex-col justify-center gap-1 md:gap-3 md:justify-end md:py-10 px-20 xl:p-10"
+            data-carousel-item
+            style="
+              background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.9458158263305322) 22%,
+                  rgba(0, 0, 0, 0.06486344537815125) 57%
+                ),
+                url(https://www.istitutomarangoni.com/marangoni/Fashion-design.jpg);
+            "
+          >
+            <section class="flex flex-col gap-1 md:gap-3">
+              <article
+                class="flex items-center gap-1 md:gap-3 w-16 h-auto md:w-24 bg-[#D6293E] rounded-lg px-2 py-1"
+              >
+                <div
+                  class="w-[8px] h-[8px] md:w-[14px] md:h-[14px] bg-white rounded-full"
+                ></div>
+                <p
+                  class="text-white font-bold md:font-normal text-[10px] md:text-[16px]"
+                >
+                  Design
+                </p>
+              </article>
+              <h2 class="text-lg xl:text-2xl text-white font-bold">
+                Latest design trends
+              </h2>
+              <p class="text-sm xl:text-lg text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae maxime quo incidunt et
+              </p>
+            </section>
+            <section class="flex gap-3 xl:gap-6 items-center">
+              <img
+                src="https://media.istockphoto.com/id/1399395748/es/foto/alegre-mujer-de-negocios-con-gafas-posando-con-las-manos-bajo-la-cara-mostrando-su-sonrisa-en.jpg?s=612x612&w=0&k=20&c=0y9KGEHKrwRUhZX2b7OH-SPUJ9t_HPf9Dle5khT77bg="
+                class="w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full object-cover"
+                alt=""
+              />
+              <p class="text-[10px] xl:text-lg text-white">by Valen</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">Nov 10,2023</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">5 min read</p>
+            </section>
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out bg-cover flex flex-col justify-center gap-1 md:gap-3 md:justify-end px-20 md:py-10 xl:p-10"
+            data-carousel-item="active"
+            style="
+              background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.9458158263305322) 22%,
+                  rgba(0, 0, 0, 0.06486344537815125) 57%
+                ),
+                url(https://preview.redd.it/mountain-lightning-strike-ai-generated-wallpaper-1920-1080-v0-5qcd8upq8sla1.jpg?auto=webp&s=ab1b342c09d098b272566f6a6b3236ae391c632a);
+            "
+          >
+            <section class="flex flex-col gap-1 md:gap-3">
+              <article
+                class="flex items-center gap-1 md:gap-3 w-24 h-auto md:w-32 bg-[#F7C32E] rounded-lg px-2 py-1"
+              >
+                <div
+                  class="w-[8px] h-[8px] md:w-[14px] md:h-[14px] bg-[#000] rounded-full"
+                ></div>
+                <p
+                  class="text-black font-bold md:font-normal text-[10px] md:text-[16px]"
+                >
+                  Technology
+                </p>
+              </article>
+              <h2 class="text-lg xl:text-2xl text-white font-bold">
+                Latest design trends
+              </h2>
+              <p class="text-sm xl:text-lg text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae maxime quo incidunt et
+              </p>
+            </section>
+            <section class="flex gap-3 xl:gap-6 items-center">
+              <img
+                src="https://media.istockphoto.com/id/1399395748/es/foto/alegre-mujer-de-negocios-con-gafas-posando-con-las-manos-bajo-la-cara-mostrando-su-sonrisa-en.jpg?s=612x612&w=0&k=20&c=0y9KGEHKrwRUhZX2b7OH-SPUJ9t_HPf9Dle5khT77bg="
+                class="w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full object-cover"
+                alt=""
+              />
+              <p class="text-[10px] xl:text-lg text-white">by Valen</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">Nov 10,2023</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">5 min read</p>
+            </section>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="hidden duration-700 ease-in-out bg-cover flex flex-col justify-center gap-1 md:gap-3 md:justify-end px-20 md:py-10 xl:p-10"
+            data-carousel-item
+            style="
+              background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.9458158263305322) 22%,
+                  rgba(0, 0, 0, 0.06486344537815125) 57%
+                ),
+                url(https://vroom.blog/wp-content/uploads/2022/03/motor-dearrollo-consejos-moto-biker-revista-vroom.jpg);
+            "
+          >
+            <section class="flex flex-col gap-1 md:gap-3">
+              <article
+                class="flex items-center gap-1 md:gap-3 w-20 h-auto md:w-24 bg-[#0CBC87] rounded-lg px-2 py-1"
+              >
+                <div
+                  class="w-[8px] h-[8px] md:w-[14px] md:h-[14px] bg-[#fff] rounded-full"
+                ></div>
+                <p
+                  class="text-white font-bold md:font-normal text-[10px] md:text-[16px]"
+                >
+                  Sports
+                </p>
+              </article>
+              <h2 class="text-lg xl:text-2xl text-white font-bold">
+                Latest design trends
+              </h2>
+              <p class="text-sm xl:text-lg text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae maxime quo incidunt et
+              </p>
+            </section>
+            <section class="flex gap-3 xl:gap-6 items-center">
+              <img
+                src="https://media.istockphoto.com/id/1399395748/es/foto/alegre-mujer-de-negocios-con-gafas-posando-con-las-manos-bajo-la-cara-mostrando-su-sonrisa-en.jpg?s=612x612&w=0&k=20&c=0y9KGEHKrwRUhZX2b7OH-SPUJ9t_HPf9Dle5khT77bg="
+                class="w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full object-cover"
+                alt=""
+              />
+              <p class="text-[10px] xl:text-lg text-white">by Valen</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">Nov 10,2023</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">5 min read</p>
+            </section>
+          </div>
+          <!-- Item 4 -->
+          <div
+            class="hidden duration-700 ease-in-out bg-cover flex flex-col justify-center gap-1 md:gap-3 md:justify-end px-20 md:py-10 xl:p-10"
+            data-carousel-item
+            style="
+              background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.9458158263305322) 22%,
+                  rgba(0, 0, 0, 0.06486344537815125) 57%
+                ),
+                url(https://wallpapers.com/images/hd/1920-x-1080-hd-gaming-q4rhjyouuumhsato.jpg);
+            "
+          >
+            <section class="flex flex-col gap-1 md:gap-3">
+              <article
+                class="flex items-center gap-1 md:gap-3 w-20 h-auto md:w-24 bg-[#6647D0] rounded-lg px-2 py-1"
+              >
+                <div
+                  class="w-[8px] h-[8px] md:w-[14px] md:h-[14px] bg-[#fff] rounded-full"
+                ></div>
+                <p
+                  class="text-white font-bold md:font-normal text-[10px] md:text-[16px]"
+                >
+                  Games
+                </p>
+              </article>
+              <h2 class="text-lg xl:text-2xl text-white font-bold">
+                Latest design trends
+              </h2>
+              <p class="text-sm xl:text-lg text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae maxime quo incidunt et
+              </p>
+            </section>
+            <section class="flex gap-3 xl:gap-6 items-center">
+              <img
+                src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2023/01/27/16748338939527.jpg"
+                class="w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full object-cover"
+                alt=""
+              />
+              <p class="text-[10px] xl:text-lg text-white">by Juan</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">Nov 10,2023</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">5 min read</p>
+            </section>
+          </div>
+          <!-- Item 5 -->
+          <div
+            class="hidden duration-700 ease-in-out bg-cover flex flex-col justify-center gap-1 md:gap-3 md:justify-end px-20 md:py-10 xl:p-10"
+            data-carousel-item
+            style="
+              background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.9458158263305322) 22%,
+                  rgba(0, 0, 0, 0.06486344537815125) 57%
+                ),
+                url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/4KTECAASSJHNHDHZG66EEDL7ZM.jpg);
+            "
+          >
+            <section class="flex flex-col gap-1 md:gap-3">
+              <article
+                class="flex items-center gap-1 md:gap-3 w-20 h-auto md:w-24 bg-[#4F9EF8] rounded-lg px-2 py-1"
+              >
+                <div
+                  class="w-[8px] h-[8px] md:w-[14px] md:h-[14px] bg-[#fff] rounded-full"
+                ></div>
+                <p
+                  class="text-white font-bold md:font-normal text-[10px] md:text-[16px]"
+                >
+                  IA
+                </p>
+              </article>
+              <h2 class="text-lg xl:text-2xl text-white font-bold">
+                Latest design trends
+              </h2>
+              <p class="text-sm xl:text-lg text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae maxime quo incidunt et
+              </p>
+            </section>
+            <section class="flex gap-3 xl:gap-6 items-center">
+              <img
+                src="https://images.pexels.com/photos/596887/pexels-photo-596887.jpeg?cs=srgb&dl=pexels-salah-amrani-596887.jpg&fm=jpg"
+                class="w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full object-cover"
+                alt=""
+              />
+              <p class="text-[10px] xl:text-lg text-white">by Juan</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">Nov 10,2023</p>
+              <span class="bg-white w-[5px] h-[5px] rounded-full"></span>
+              <p class="text-[10px] xl:text-lg text-white">5 min read</p>
+            </section>
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
         >
-          Trending:
-        </h3>
-        <section class="swiper mySwiper">
-          <article class="swiper-wrapper">
-            <h4 class="swiper-slide">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos
-              veniam
-            </h4>
-            <h4 class="swiper-slide">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos
-              veniam
-            </h4>
-            <h4 class="swiper-slide">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eos
-              veniam
-            </h4>
-          </article>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </section>
-      </article>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
     </section>
     <!-- trending  -->
+
+    <main
+      class="my-10 lg:container max-w-screen-lg mx-auto px-6 flex flex-col gap-10"
+    >
+      <section class="flex flex-col items-center xl:items-start">
+        <article class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+
+          <h3 class="text-2xl text-[#191a1f] font-bold">
+            Today's top highlights
+          </h3>
+        </article>
+        <p class="text-[#666974]">
+          Latest breaking news, pictures, videos, and special reports
+        </p>
+      </section>
+
+      <section class="flex flex-wrap justify-between gap-6 md:gap-0">
+        <figure class="w-full md:w-[48%] flex flex-col gap-3">
+          <div
+            class="w-full h-[230px] md:h-[310px] rounded-lg bg-cover flex items-end p-6"
+            style="
+              background-image: url(https://data.1freewallpapers.com/download/colorful-graphic-design-background-abstract.jpg);
+            "
+          >
+            <article
+              class="flex items-center gap-1 md:gap-3 w-16 h-auto md:w-24 bg-[#D6293E] rounded-lg px-2 py-1"
+            >
+              <div
+                class="w-[8px] h-[8px] md:w-[14px] md:h-[14px] bg-white rounded-full"
+              ></div>
+              <p
+                class="text-white font-bold md:font-normal text-[10px] md:text-[16px]"
+              >
+                Design
+              </p>
+            </article>
+          </div>
+          <section>
+            <h3 class="text-lg xl:text-2xl text-[#191a1f] font-bold">
+              12 worst types of business accounts you follow on Twitter
+            </h3>
+            <p class="text-[#666974] text-[16px]">
+              He moonlights difficult engrossed it, sportsmen. Interested has
+              all Devonshire difficulty gay assistance joy. Unaffected at ye of
+              compliment alteration to
+            </p>
+          </section>
+          <section class="flex gap-3 items-center">
+            <img
+              src="https://img.freepik.com/fotos-premium/retrato-mujer-hermosa-cabello-largo-sonriendo-mientras-camina-al-aire-libre_171337-105406.jpg"
+              alt=""
+              class="w-8 h-8 rounded-full object-cover"
+            />
+            <p class="text-sm text-[#666974]">by Valen</p>
+            <span class="w-[5px] h-[5px] bg-[#666974] rounded-full"></span>
+            <p class="text-sm text-[#666974]">Oct 18,23</p>
+          </section>
+        </figure>
+        <figure class="w-full md:w-[48%] flex flex-col gap-3">
+          <div
+            class="w-full h-[230px] md:h-[310px] rounded-lg bg-cover flex items-end p-6"
+            style="
+              background-image: url(https://www.hdwallpapers.in/download/technology_circuit_board_hd_technology-HD.jpg);
+            "
+          >
+            <article
+              class="flex items-center gap-1 md:gap-3 w-24 h-auto md:w-32 bg-[#F7C32E] rounded-lg px-2 py-1"
+            >
+              <div
+                class="w-[8px] h-[8px] md:w-[14px] md:h-[14px] bg-[#000] rounded-full"
+              ></div>
+              <p
+                class="text-black font-bold md:font-normal text-[10px] md:text-[16px]"
+              >
+                Technology
+              </p>
+            </article>
+          </div>
+          <section>
+            <h3 class="text-lg xl:text-2xl text-[#191a1f] font-bold">
+              12 worst types of business accounts you follow on Twitter
+            </h3>
+            <p class="text-[#666974] text-[16px]">
+              He moonlights difficult engrossed it, sportsmen. Interested has
+              all Devonshire difficulty gay assistance joy. Unaffected at ye of
+              compliment alteration to
+            </p>
+          </section>
+          <section class="flex gap-3 items-center">
+            <img
+              src="https://discoverymood.com/wp-content/uploads/2020/04/Mental-Strong-Women-min.jpg"
+              alt=""
+              class="w-8 h-8 rounded-full object-cover"
+            />
+            <p class="text-sm text-[#666974]">by Valen</p>
+            <span class="w-[5px] h-[5px] bg-[#666974] rounded-full"></span>
+            <p class="text-sm text-[#666974]">Oct 18,23</p>
+          </section>
+        </figure>
+      </section>
+    </main>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
